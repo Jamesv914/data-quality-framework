@@ -14,10 +14,11 @@ A scalable, modular data quality framework built using Python, Pandas, Great Exp
 - Python, Pandas
 - Great Expectations, Deequ
 - Power BI
-- Streamlit (optional)
+- Streamlit 
 
 ## Structure
 ```
+requriements.txt
 data/
   └── sample.csv
 src/
