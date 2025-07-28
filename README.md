@@ -1,8 +1,8 @@
-# 🧪 Data Quality Framework
+# Data Quality Framework
 
 A scalable, modular data quality framework built using Python, Pandas, Great Expectations, and Deequ. This tool automates data validation, profiling, and dashboarding for any CSV-based dataset.
 
-## 🚀 Features
+## Features
 - Schema validation
 - Null & duplicate detection
 - Cardinality and entropy profiling
@@ -10,13 +10,13 @@ A scalable, modular data quality framework built using Python, Pandas, Great Exp
 - Label normalization and NLP-based cleaning
 - Power BI dashboard-ready output
 
-## ⚙️ Tech Stack
+## Tech Stack
 - Python, Pandas
 - Great Expectations, Deequ
 - Power BI
 - Streamlit (optional)
 
-## 📁 Structure
+## Structure
 ```
 data/
   └── sample.csv
@@ -30,14 +30,14 @@ app/
   └── app.py
 ```
 
-## 🔧 How to Run
+## How to Run
 1. Place your CSV file in the `data/` directory.
 2. Run `python src/preprocessing.py`
 3. Run `python src/validation.py`
 4. Run `python src/profiling.py`
 5. Output results can be visualized via Power BI or Streamlit (coming soon)
 
-## 🧠 Future Work
+## Future Work
 - Streamlit dashboard UI
 - Cloud-based deployment with Azure
 - Email alert system for data quality failures
