@@ -14,10 +14,11 @@ A scalable, modular data quality framework built using Python, Pandas, Great Exp
 - Python, Pandas
 - Great Expectations, Deequ
 - Power BI
-- Streamlit (optional)
+- Streamlit 
 
 ## Structure
 ```
+requriements.txt
 data/
   └── sample.csv
 src/
@@ -30,7 +31,7 @@ app/
 
 ## How to Run
 1. Clone Repo to your PC
-2. Open terminal and navigate to current file path
+2. Open terminal and navigate to current file path `pip install -r requirements.txt`
 3. Run `streamlit run app/app.py`
 
 ## Future Work
