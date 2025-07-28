@@ -18,7 +18,8 @@ if uploaded_file:
     st.dataframe(null_counts[null_counts > 0])
 
     st.markdown("### Duplicate Rows")
-    st.write(df.duplicated().sum())
+    dupes = df.duplicated().sum()
+    st.write(dupes)
 
     # Null bar chart
     st.subheader("Nulls per Column (Bar Chart)")
@@ -41,7 +42,26 @@ if uploaded_file:
         st.info("No numeric columns available for correlation analysis.")
 
     # Column summary selector
-    st.subheader("🔍 Column Summary Explorer")
+    st.subheader("Column Summary Explorer")
     column = st.selectbox("Choose a column to explore", df.columns)
-    st.write("📌 Basic statistics:")
+    st.write("Basic statistics:")
     st.write(df[column].describe())
+
+    # Data Quality Scoreboard
+    st.subheader("Data Quality Scoreboard")
+    total_cells = df.shape[0] * df.shape[1]
+    null_cells = df.isnull().sum().sum()
+    null_score = 1 - (null_cells / total_cells)
+
+    duplicate_score = 1 - (dupes / df.shape[0])
+
+    overall_score = round((null_score + duplicate_score) / 2 * 100, 2)
+
+    st.markdown(f'''
+- **Total Cells:** {total_cells}
+- **Null Cells:** {null_cells}
+- **Duplicate Rows:** {dupes}
+- **Null Score:** {round(null_score * 100, 2)}%
+- **Duplicate Score:** {round(duplicate_score * 100, 2)}%
+- 🎯 **Overall Data Quality Score:** `{overall_score}%`
+    ''')
