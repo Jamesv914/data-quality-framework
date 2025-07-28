@@ -44,8 +44,7 @@ app/
 4. Run `streamlit run app/app.py`
 
 ## Future Work
-- Streamlit dashboard UI
-- Cloud-based deployment with Azure
+- Cloud-based deployment
 - Email alert system for data quality failures
 
 ---
