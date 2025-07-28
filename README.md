@@ -31,7 +31,8 @@ app/
 ## How to Run
 1. Clone Repo to your PC
 2. Open terminal and navigate to current file path
-3. Run `streamlit run app/app.py`
+3. Make sure you have everything needed `pip install -r requirements.txt`
+4. Run `streamlit run app/app.py`
 
 ## Future Work
 - Streamlit dashboard UI
