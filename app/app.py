@@ -63,5 +63,5 @@ if uploaded_file:
 - **Duplicate Rows:** {dupes}
 - **Null Score:** {round(null_score * 100, 2)}%
 - **Duplicate Score:** {round(duplicate_score * 100, 2)}%
-- 🎯 **Overall Data Quality Score:** `{overall_score}%`
+- **Overall Data Quality Score:** `{overall_score}%`
     ''')
