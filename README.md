@@ -20,8 +20,6 @@ A scalable, modular data quality framework built using Python, Pandas, Great Exp
 ```
 data/
   └── sample.csv
-notebooks/
-  └── EDA.ipynb
 src/
   ├── preprocessing.py
   ├── validation.py
@@ -31,11 +29,9 @@ app/
 ```
 
 ## How to Run
-1. Place your CSV file in the `data/` directory.
-2. Run `python src/preprocessing.py`
-3. Run `python src/validation.py`
-4. Run `python src/profiling.py`
-5. Output results can be visualized via Power BI or Streamlit (coming soon)
+1. Clone Repo to your PC
+2. Open terminal and navigate to current file path
+3. Run `streamlit run app/app.py`
 
 ## Future Work
 - Streamlit dashboard UI
