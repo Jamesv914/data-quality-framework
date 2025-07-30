@@ -1,6 +1,6 @@
 # Data Quality Framework
 
-Link: (https://github.com/Jamesv914/data-quality-framework.git)
+Link: https://github.com/Jamesv914/data-quality-framework.git
 
 A scalable, modular data quality framework built using Python, Pandas, and Streamlit — with planned support for Great Expectations and Deequ. This tool automates data validation, profiling, and interactive dashboarding for any CSV-based dataset.
 
